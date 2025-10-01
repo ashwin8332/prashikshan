@@ -1,0 +1,155 @@
+/* Import custom styles */
+@import './styles/logo.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 201 100% 45%;
+    --primary-foreground: 210 40% 98%;
+    --primary-50: 204 100% 97%;
+    --primary-100: 204 94% 94%;
+    --primary-200: 201 94% 86%;
+    --primary-300: 199 95% 74%;
+    --primary-400: 198 93% 60%;
+    --primary-500: 199 89% 48%;
+    --primary-600: 200 98% 39%;
+    --primary-700: 201 96% 32%;
+    --primary-800: 201 90% 27%;
+    --primary-900: 202 80% 24%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+    --accent-50: 270 100% 98%;
+    --accent-100: 269 100% 95%;
+    --accent-500: 262 83% 58%;
+    --accent-600: 263 70% 50%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 201 100% 45%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-50: 204 100% 7%;
+    --primary-100: 204 94% 14%;
+    --primary-200: 201 94% 20%;
+    --primary-300: 199 95% 26%;
+    --primary-400: 198 93% 38%;
+    --primary-500: 199 89% 48%;
+    --primary-600: 200 98% 59%;
+    --primary-700: 201 96% 68%;
+    --primary-800: 201 90% 77%;
+    --primary-900: 202 80% 86%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+    --accent-50: 270 100% 18%;
+    --accent-100: 269 100% 25%;
+    --accent-500: 262 83% 58%;
+    --accent-600: 263 70% 70%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer components {
+  /* Base styling for sections */
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+  
+  .container-max {
+    @apply container mx-auto px-4 md:px-8;
+  }
+  
+  /* Typography */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 tracking-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-muted-foreground mb-12 max-w-2xl mx-auto;
+  }
+  
+  .hero-title {
+    @apply text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 tracking-tight drop-shadow-lg;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl lg:text-3xl mb-6 font-semibold;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  /* Cards */
+  .feature-card {
+    @apply p-6 md:p-8 rounded-xl shadow-lg border border-border/20 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full;
+  }
+  
+  /* Background patterns */
+  .bg-dots {
+    background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary to-primary-700 dark:from-primary-900 dark:to-primary-700;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    @apply bg-primary text-white py-3 px-6 rounded-lg font-medium inline-flex items-center hover:bg-primary-600 transition-all shadow-lg hover:shadow-xl active:shadow-lg hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 backdrop-blur-sm text-white py-3 px-6 rounded-lg font-medium inline-flex items-center border border-white/20 hover:bg-white/20 transition-all shadow-lg hover:shadow-xl hover:scale-105;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary dark:text-primary py-3 px-6 rounded-lg font-medium inline-flex items-center hover:bg-primary/10 transition-all hover:scale-105;
+  }
+  
+  /* Partner logos scrolling animation */
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

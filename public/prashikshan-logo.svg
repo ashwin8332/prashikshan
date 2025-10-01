@@ -1,0 +1,43 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle border -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#ffffff" stroke-width="6"/>
+  
+  <!-- Four quadrants representing education sectors -->
+  
+  <!-- Top-left: Art/Design (Palette) -->
+  <path d="M 100 100 L 100 20 A 80 80 0 0 0 20 100 Z" fill="#0891b2"/>
+  <!-- Palette icon -->
+  <circle cx="65" cy="55" r="8" fill="#ffffff"/>
+  <circle cx="75" cy="45" r="4" fill="#ffffff"/>
+  <circle cx="85" cy="60" r="5" fill="#ffffff"/>
+  <circle cx="70" cy="70" r="6" fill="#ffffff"/>
+  <path d="M 60 65 Q 75 75 85 65" stroke="#ffffff" stroke-width="3" fill="none"/>
+  
+  <!-- Top-right: Science (Microscope) -->
+  <path d="M 100 100 L 180 100 A 80 80 0 0 0 100 20 Z" fill="#0d9488"/>
+  <!-- Microscope icon -->
+  <rect x="130" y="35" width="8" height="25" fill="#ffffff"/>
+  <rect x="125" y="32" width="18" height="4" fill="#ffffff"/>
+  <circle cx="134" cy="65" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <rect x="130" y="75" width="8" height="15" fill="#ffffff"/>
+  
+  <!-- Bottom-left: Books/Literature -->
+  <path d="M 100 100 L 20 100 A 80 80 0 0 0 100 180 Z" fill="#0d9488"/>
+  <!-- Books icon -->
+  <rect x="35" y="120" width="25" height="4" fill="#ffffff"/>
+  <rect x="37" y="128" width="23" height="4" fill="#ffffff"/>
+  <rect x="39" y="136" width="21" height="4" fill="#ffffff"/>
+  <rect x="35" y="145" width="25" height="4" fill="#ffffff"/>
+  <rect x="37" y="153" width="23" height="4" fill="#ffffff"/>
+  
+  <!-- Bottom-right: Technology (Laptop) -->
+  <path d="M 100 100 L 100 180 A 80 80 0 0 0 180 100 Z" fill="#22d3ee"/>
+  <!-- Laptop icon -->
+  <rect x="125" y="135" width="30" height="20" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <rect x="127" y="137" width="26" height="14" fill="#ffffff"/>
+  <rect x="123" y="155" width="34" height="3" rx="1" fill="#ffffff"/>
+  
+  <!-- Center circle with "P" -->
+  <circle cx="100" cy="100" r="18" fill="#ffffff"/>
+  <text x="100" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0891b2">P</text>
+</svg>

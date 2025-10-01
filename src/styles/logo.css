@@ -1,0 +1,92 @@
+/* Logo specific styles */
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-container img {
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-container:hover img {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 4px 8px rgba(8, 145, 178, 0.3));
+}
+
+/* Logo pulse animation for hero sections */
+.logo-pulse {
+  animation: logoPulse 2s infinite;
+}
+
+@keyframes logoPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Logo glow effect */
+.logo-glow {
+  filter: drop-shadow(0 0 10px rgba(8, 145, 178, 0.5));
+}
+
+/* Responsive logo sizing */
+@media (max-width: 640px) {
+  .logo-responsive {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .logo-responsive {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/* Logo brand text styling */
+.logo-brand-text {
+  background: linear-gradient(135deg, #0891b2, #22d3ee);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Logo subtitle styling */
+.logo-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+/* Header logo specific styles */
+.header-logo {
+  transition: all 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: translateY(-2px);
+}
+
+/* Auth page logo styles */
+.auth-logo {
+  filter: drop-shadow(0 4px 12px rgba(8, 145, 178, 0.25));
+}
+
+.auth-logo-text {
+  background: linear-gradient(135deg, #0891b2, #0d9488);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
